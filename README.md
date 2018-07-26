@@ -1,24 +1,27 @@
-# README
+# Nous sommes le groupe de THP-Nantes : Bertyn, Mohamed, Lionel, Nicolas et Florian
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Voici la base de donnée sur Hacking news.
 
-Things you may want to cover:
+Elle est composée de 4 tables :
 
-* Ruby version
+- users qui a un nom
 
-* System dependencies
+- links qui a un titre
 
-* Configuration
+- comments qui contient un texte
 
-* Database creation
+- comment_of_comments, vous avez compris je suppose
 
-* Database initialization
 
-* How to run the test suite
+Plusieurs liens entre les tables :
 
-* Services (job queues, cache servers, search engines, etc.)
+- un user dépose un lien
 
-* Deployment instructions
+- un lien possède plusieurs commentaires
 
-* ...
+- un commentaire a un auteur(user) et concerne un lien
+
+- un commentaire peut concerner un autre commentaire
+
+
+Vous pouvez vérifier les tables créées avec 10 lignes pour chaque dans db/development.sqlite3
